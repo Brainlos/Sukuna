@@ -1,1 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukuna Page</title>
+</head>
+<body>
+    <h1>Sukuna Page</h1>
+    <p>Votes for Sukuna: <span id="sukunaVotesDisplay">Loading...</span></p>
 
+    <script>
+        // Retrieve Sukuna votes from localStorage
+        let sukunaVotes = localStorage.getItem('SukunaVotes') || '0';
+        document.getElementById('sukunaVotesDisplay').textContent = sukunaVotes;
+    </script>
+</body>
+</html>
